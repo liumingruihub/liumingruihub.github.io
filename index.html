@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <!-- topBar -->
+    <div class="topBar">
+        <div id="slider"></div>
+        <div class="music">
+        </div>
+        <div class="logo">
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">算命</a></li>
+                <li><a href="#">改命</a></li>
+                <li><a href="#">看风水</a></li>
+                <li><a href="#">社区</a></li>
+            </ul>
+        </div>
+        <div class="zhanwei">
+        </div>
+        <div class="login">
+            <a href="#">登录</a>
+            <a href="#"></a>
+        </div>
+    </div>
+
+    <!-- 临时占位 -->
+    <div class="temp">
+    </div>
+
+    <!-- share -->
+    <div class="share">
+        <ul>
+            <li>
+                <a href="#"></a>
+            </li>
+            <li>
+                <a href="#"></a>
+            </li>
+            <li>
+                <a href="#"></a>
+            </li>
+            <li>
+                <a href="#"></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="content">
+            <div class="footer-links">
+                <div class="footer-logo">
+                    <img src="./images/ia_100000003.png" alt="" class="mihoyo">
+                    <span></span>
+                    <img src="./images/ia_100000013.png" alt="" class="logo">
+                </div>
+                <div class="contact">
+                    <li><a href="#">用户协议</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">家长监护工程</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="#">加入我们</a></li>
+                </div>
+                <div class="copyright">
+                    <span>米哈游公司，版权所有</span>
+                </div>
+
+            </div>
+            <p>健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+            <p>适龄提示： 本游戏适合17岁（含）以上玩家娱乐</p>
+            <div class="beian">
+                <div class="icon"></div><a href="">沪公网安备300031270号</a><a href="">沪ICP备9002889003-1号</a>
+            </div>
+            <span>沪网文〔2018〕9752-608号</span><span>增值电信业务经营许可证：沪B2-20180816</span>
+            <p>互联网违法不良信息举报电话: 021-34203135 （工作时间：每天10点 - 20点）</p>
+            <p>互联网违法不良信息举报邮箱: tousu@mihoyo.com</p>
+            <ul>
+                <li><a href=""><img src="./images/ia_100000006.png" alt=""></a></li>
+                <li><a href=""><img src="./images/ia_100000007.png" alt=""></a></li>
+                <li><a href=""><img src="./images/ia_100000008.png" alt=""></a></li>
+                <li><a href=""><img src="./images/ia_100000009.png" alt=""></a></li>
+            </ul>
+            <p>亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。</p>
+        </div>
+    </div>
+
+    <script src='./jquery-1.12.4.js'></script>
+    <script>
+        // 适配屏幕宽度
+        setHtmlFontSize();
+        function setHtmlFontSize() {
+            var windowWidth = document.documentElement.offsetWidth;
+            // 我对此表示怀疑
+            var standardWidth = 1366;
+            var standardFontSize = 100;
+            var nowFontSize = windowWidth / standardWidth * standardFontSize + 'px';
+            document.querySelector('html').style.fontSize = nowFontSize;
+        }
+        window.addEventListener('resize', setHtmlFontSize);
+
+        // 鼻滴虫动画
+        $(function () {
+            $('.topBar .links ul li').mouseenter(function () {
+                var i = $(this).index();
+                $('#slider').stop(true, false).animate({ left: 2.33 + i * 1.2838 + 'rem',opacity: 0 }, 2019,function() {
+                    $('#slider').animate({opacity: 1},1998)
+                });
+            })
+        })
+
+        $('.music').mouseenter(function() {
+            // 触发音乐《爱情买卖》。
+        })
+
+
+
+    </script>
+</body>
+
+</html>

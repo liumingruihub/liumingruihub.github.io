@@ -1,0 +1,256 @@
+.topBar {
+  width: 13.66rem;
+  height: .66rem;
+  background-color: rgba(16, 17, 18, 0.75);
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topBar #slider {
+  position: fixed;
+  width: 1.2838rem;
+  height: .07rem;
+  top: 0;
+  left: 2.33rem;
+  background-color: skyblue;
+  border-radius: .03rem;
+}
+.topBar .music {
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-left: 0.3rem;
+  background-image: url('../images/ia_100000000.png');
+  background-size: cover;
+}
+.topBar .logo {
+  width: 1rem;
+  height: .72rem;
+  margin-left: .3rem;
+  margin-right: .3rem;
+  background-image: url('../images/ia_100000004.png');
+  background-size: cover;
+}
+.topBar .links {
+  width: 6.5rem;
+  height: 100%;
+}
+.topBar .links ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.topBar .links ul li {
+  display: inline-block;
+  height: 100%;
+  flex: 1;
+}
+.topBar .links ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  font-size: .18rem;
+  color: #e8e6e3;
+  font-weight: bold;
+  line-height: .66rem;
+}
+.topBar .zhanwei {
+  flex: 1;
+}
+.topBar .login {
+  margin-right: 0.3rem;
+  display: flex;
+  align-items: center;
+}
+.topBar .login a:nth-child(1) {
+  display: inline-block;
+  height: 100%;
+  line-height: .66rem;
+  font-size: .18rem;
+  color: #e8e6e3;
+  font-weight: bold;
+}
+.topBar .login a:nth-child(2) {
+  display: inline-block;
+  width: .3rem;
+  height: .3rem;
+  background-image: url('../images/ia_100000001.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.temp {
+  width: 13.66rem;
+  height: 2rem;
+  background-color: pink;
+}
+.share {
+  width: 13.66rem;
+  height: 0.52rem;
+  background-color: rgba(16, 17, 18, 0.75);
+  margin-top: 0.66rem;
+}
+.share ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.share ul li {
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.4rem;
+}
+.share ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  background-image: url(../images/ia_100000034.png);
+  background-size: 2.56rem 1.92rem;
+}
+.share ul li:last-child {
+  margin-right: 0;
+}
+.share ul li:nth-child(1) a {
+  background-position-x: -1.43rem;
+  background-position-y: -0.8rem;
+}
+.share ul li:nth-child(1) a:hover {
+  background-position-x: -1.43rem;
+  background-position-y: -1.44rem;
+}
+.share ul li:nth-child(2) a {
+  background-position-x: -0.16rem;
+  background-position-y: -0.16rem;
+}
+.share ul li:nth-child(2) a:hover {
+  background-position-x: -0.8rem;
+  background-position-y: -0.16rem;
+}
+.share ul li:nth-child(3) a {
+  background-position-x: -1.44rem;
+  background-position-y: -0.155rem;
+}
+.share ul li:nth-child(3) a:hover {
+  background-position-x: -0.8rem;
+  background-position-y: -1.44rem;
+}
+.share ul li:nth-child(4) a {
+  background-position-x: -2.08rem;
+  background-position-y: -0.16rem;
+}
+.share ul li:nth-child(4) a:hover {
+  background-position-x: -0.16rem;
+  background-position-y: -1.44rem;
+}
+.footer {
+  width: 13.66rem;
+  height: 4.1922rem;
+  background-color: rgba(16, 17, 18, 0.75);
+  padding-top: .3rem;
+}
+.footer .content {
+  display: block;
+  width: 10.24rem;
+  margin: 0 auto;
+}
+.footer .content .footer-links {
+  width: 10.24rem;
+  height: 0.94rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.footer .content .footer-links .footer-logo {
+  width: 3.3109rem;
+  height: 100%;
+  float: left;
+  margin-right: .5rem;
+  display: flex;
+  align-items: center;
+}
+.footer .content .footer-links .footer-logo img.mihoyo {
+  width: 1.3rem;
+  height: 0.5rem;
+}
+.footer .content .footer-links .footer-logo span {
+  display: inline-block;
+  width: 0.05rem;
+  height: 0.5rem;
+  background-color: gray;
+  margin-left: 0.33rem;
+  margin-right: 0.33rem;
+}
+.footer .content .footer-links .footer-logo img.logo {
+  width: 1.2rem;
+  height: 0.8786rem;
+}
+.footer .content .footer-links .contact {
+  height: 0.19rem;
+  margin-top: .3rem;
+}
+.footer .content .footer-links .contact li {
+  display: inline-block;
+}
+.footer .content .footer-links .contact li a {
+  color: #fff;
+  font-size: .14rem;
+}
+.footer .content .footer-links .contact li:nth-child(even) {
+  margin: 0 .10rem;
+}
+.footer .content .footer-links .copyright {
+  padding-top: .1rem;
+}
+.footer .content .footer-links .copyright span {
+  color: #fff;
+  font-size: .14rem;
+}
+.footer .content .beian .icon {
+  width: 0.2rem;
+  height: 0.2rem;
+  display: inline-block;
+  background-image: url('../images/ia_100000005.png');
+  background-size: cover;
+}
+.footer .content p,
+.footer .content span,
+.footer .content a {
+  color: white;
+  font-size: .14rem;
+  line-height: .35rem;
+}
+.footer .content ul li:nth-child(1) {
+  width: 0.26rem;
+  height: 0.3rem;
+}
+.footer .content ul li:nth-child(2) {
+  width: 0.64rem;
+  height: 0.3rem;
+}
+.footer .content ul li:nth-child(3) {
+  width: 0.79rem;
+  height: 0.3rem;
+}
+.footer .content ul li:nth-child(4) {
+  width: 0.43rem;
+  height: 0.3rem;
+}
+.footer .content ul li {
+  display: inline-block;
+}
+.footer .content ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+.footer .content ul li a img {
+  width: 100%;
+  height: 100%;
+}
